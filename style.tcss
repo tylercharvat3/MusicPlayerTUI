@@ -1,0 +1,78 @@
+#songs {
+  height: 1fr;
+}
+
+#player {
+  height: auto;
+}
+
+#progress-row {
+  height: 1;
+  padding: 0 2;
+}
+
+#elapsed,
+#duration {
+  width: 6;
+  color: $text-muted;
+}
+
+#elapsed {
+  text-align: left;
+}
+
+#duration {
+  text-align: right;
+}
+
+#bar {
+  width: 1fr;
+}
+
+#bar Bar {
+  width: 1fr;
+}
+
+#controls {
+  height: 7;
+  padding: 1 1;
+  align-vertical: middle;
+}
+
+#nowplaying {
+  width: 1fr;
+  height: 5;
+}
+
+#cover {
+  width: 10;
+  height: 5;
+}
+
+#info {
+  width: 1fr;
+  height: 5;
+  padding-left: 1;
+  align-vertical: middle;
+}
+
+#title {
+  text-style: bold;
+}
+
+#artist {
+  color: $text-muted;
+}
+
+#play {
+  width: 8;
+  min-width: 8;
+}
+
+#play.playing {
+  background: green;
+}
+
+#spacer {
+  width: 1fr;
+}
