@@ -6,33 +6,6 @@
   height: auto;
 }
 
-#progress-row {
-  height: 1;
-  padding: 0 2;
-}
-
-#elapsed,
-#duration {
-  width: 6;
-  color: $text-muted;
-}
-
-#elapsed {
-  text-align: left;
-}
-
-#duration {
-  text-align: right;
-}
-
-#bar {
-  width: 1fr;
-}
-
-#bar Bar {
-  width: 1fr;
-}
-
 #controls {
   height: 7;
   padding: 1 1;
@@ -64,15 +37,60 @@
   color: $text-muted;
 }
 
+/* Center column: play button with the progress bar beneath it */
+#center {
+  width: 1fr;
+  height: 5;
+  align: center middle;
+}
+
 #play {
   width: 8;
   min-width: 8;
 }
 
-#play.playing {
-  background: green;
+#progress-row {
+  width: 25vw;        /* 25% of the window width */
+  max-width: 100%;    /* don't overflow the column on narrow windows */
+  height: 1;
+}
+
+#elapsed,
+#duration {
+  width: 6;
+  color: $text-muted;
+}
+
+#elapsed {
+  text-align: left;
+}
+
+#duration {
+  text-align: right;
+}
+
+#bar {
+  width: 1fr;
+}
+
+#bar Bar {
+  width: 1fr;
 }
 
 #spacer {
   width: 1fr;
+}
+LoginScreen {
+    align: center middle;
+}
+#login {
+    width: 50;
+    height: auto;
+    padding: 1 2;
+    border: round $accent;
+    background: $surface;
+}
+#login-error {
+    color: $error;
+    height: auto;
 }
